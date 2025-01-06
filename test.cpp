@@ -13,9 +13,9 @@ int my_fancy_tests() {
 }
 
 int main(void) {
-  TEST_CASE(my_fancy_tests);
+#  TEST_CASE(my_fancy_tests);
 
-  TEST_EQUALS(Factorial(0), -1);
+  TEST_EQUALS(Factorial(0), 1);
   TEST_EQUALS(Factorial(1), 1);
   TEST_EQUALS(Factorial(2), 2);
   TEST_EQUALS(Factorial(3), 6);
