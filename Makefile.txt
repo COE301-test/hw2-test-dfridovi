@@ -1,10 +1,10 @@
-all: a.out
+all: test.out
 
-a.out:
-	g++ -std=c++11 hello.cpp
+test.out:
+	g++ -std=c++11 test.cpp -o test
 
-test: a.out
-	./a.out
+test: test
+	./test
 
 clean:
-	rm a.out
+	rm test
